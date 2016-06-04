@@ -1,6 +1,7 @@
 <?xml version="1.0" encoding="UTF-8" ?>
 <widget xmlns   = "http://www.w3.org/ns/widgets"
     xmlns:gap   = "http://phonegap.com/ns/1.0"
+	xmlns:android="http://schemas.android.com/apk/res/android"
     id          = "com.rmabjish.tic-tac-toe"
     versionCode = "10"
     version     = "1.0.0" >
@@ -17,4 +18,15 @@
       Richard Mabjish
   </author>
 
+    <content src="index.html"/>
+  <preference name="android-build-tool" value="gradle" />
+  <gap:config-file platform="android" parent="/manifest">
+     <application android:debuggable="true" />
+  </gap:config-file>
+  
+  <platform name="android">
+    <allow-intent href="*.phonegap.com" />
+    <allow-intent href="market:*"/>
+  </platform>
+  
 </widget>
