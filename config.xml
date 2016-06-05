@@ -14,7 +14,7 @@
       Phonegap build -Tic TAc Toe
   </description>
 
-  <author href="https://build.phonegap.com" email="support@phonegap.com">
+  <author href="https://build.phonegap.com" email="richard.cognos@gmail.com">
       Richard Mabjish
   </author>
 
@@ -24,6 +24,9 @@
   <gap:config-file platform="android" parent="/manifest">
      <application android:debuggable="true" />
   </gap:config-file>
+  
+  <allow-intent href="http://*/*"/>
+  <allow-intent href="https://*/*"/>
   
   <platform name="android">
     <allow-intent href="*.phonegap.com" />
